@@ -9,10 +9,15 @@ end
 
 feature 'enter names' do
   it 'submitting names' do
-    visit('/names')
-    fill_in :player_1_name, with: 'Amy'
-    fill_in :player_2_name, with: 'Anastasis'
-    click_button 'Submit'
+  sign_in_and_play
     expect(page).to have_content 'Amy vs. Anastasis'
   end
+
+
+
+#   As Player 1,
+# So I can see how close I am to winning
+# I want to see Player 2's Hit Points
+
+
 end
