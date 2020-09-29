@@ -3,15 +3,16 @@ class Game
     @players = [player_1, player_2]
   end
 
-  def player_1
+  def attacker
     @players.first
   end
 
-  def player_2
+  def defender
     @players.last
   end
 
-  def attack(player)
-    player.receive_damage
+  def attack
+    @players.last.receive_damage
+    @players.rotate!
   end
 end
