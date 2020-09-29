@@ -1,4 +1,4 @@
-require './spec_helper.rb'
+require 'spec_helper.rb'
 
 feature 'Attacking' do
   it 'Can attack player 2 ' do

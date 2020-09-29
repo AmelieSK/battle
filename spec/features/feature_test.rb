@@ -1,4 +1,4 @@
-require './spec_helper.rb'
+# require './spec/spec_helper.rb'
 
 feature 'check homepage' do
   it 'checks that it says "Testing infrastructure working!"' do
